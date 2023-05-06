@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #9c27b0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .product h2 {
+    margin-top: 10px;
+  }
+  
+  .product p {
+    margin: 10px;
+    color: #555;
+  }
+  
+
+  /* =================================
+  CSS For Email Box 
+  ================================== */
+
+  .contact-box {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-box label {
+    margin-bottom: 10px;
+  }
+  
+  .contact-box input,
+  .contact-box textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contact-box input:focus,
+  .contact-box textarea:focus {
+    outline: none;
+    box-shadow: 0 0 2px #007bff;
+  }
+  
+  .contact-box button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: center;
+    width: 100px;
+  }
+  
+  .contact-box button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
