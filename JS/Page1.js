@@ -2,33 +2,33 @@
 // JS Code for Email Box 
 // ==============================
 
-// function sendEmail() {
-//     const name = document.getElementById("name").value;
-//     const email = document.getElementById("email").value;
-//     const message = document.getElementById("message").value;
-//     const subject = "New Contact Message from " + name;
-//     const body = "Name: " + name + "\nEmail: " + email + "\n\nMessage: \n" + message;
-//     const mailtoLink = "mailto:abc@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-//     window.location.href = mailtoLink;
-
-// //   window.open(mailtoLink);
-//   }
-
 let name = document.getElementById("name").value;
 const email = document.getElementById("email").value;
 const message = document.getElementById("message").value;
 const subject = "New Contact Message from " + name;
+
 function sendEmail() {
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: "devalujjwal.2000@gmail.com",
-        Password: "kjyhowspferuwval",
-        To: 'ujjwaldeval.2000@gmail.com',
-        From: email,
-        Subject: subject,
-        Body: message,
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
-}
+      Host: "smtp.elasticemail.com",
+      Username: "craftadcare@gmail.com",
+      Password: "D2B22D7E02653E2AB75F864721F2305CDE12",
+      To: 'chandujoshi386@gmail.com',
+      From: 'craftadcare@gmail.com', // put a real email address that is verified
+      Port: '2525',
+      Subject: subject,
+      Body: message,
+    }).then(
+      message => {
+        alert("mail sent successfully");
+        console.log(message);
+      }
+    );
+  }
+
+  // ============================================
+//     Footer
+//      ============================================
+
+const footer = document.querySelector("footer");
+const footerHeight = footer.offsetHeight;
+document.body.style.paddingBottom = footerHeight + "px";
